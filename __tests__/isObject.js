@@ -1,0 +1,20 @@
+import { isObject } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isObject, false);
+test._plusInfinity(isObject, false);
+test._minusInfinity(isObject, false);
+test._undefined(isObject, false);
+test._null(isObject, false);
+test._true(isObject, false);
+test._false(isObject, false);
+test._function(isObject, false);
+test._number(isObject, false);
+test._object(isObject, true);
+test._string(isObject, false);
+test._symbol(isObject, false);
+test._integer(isObject, false);
+test._array(isObject, true);
+test._typedArray(isObject, true);
+test._map(isObject, true);
+test._set(isObject, true);

@@ -1,0 +1,33 @@
+{
+  "name": "@fpc/types",
+  "description": "Dynamic type checking functions",
+  "version": "0.0.1",
+  "author": "Emiliano Bovetti <emiliano.bovetti@gmail.com>",
+  "license": "GPL-3.0",
+  "keywords": [
+    "functional",
+    "types",
+    "fpc",
+    "fp"
+  ],
+  "main": "./src/index",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpc-js/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fpc-js/types/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
+  }
+}

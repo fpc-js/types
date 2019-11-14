@@ -1,0 +1,20 @@
+import { expectIterable as expIter } from '../src';
+import * as test from '../test-utils';
+
+test._nan(expIter, new TypeError('Expected iterable, got NaN'));
+test._plusInfinity(expIter, new TypeError('Expected iterable, got infinity'));
+test._minusInfinity(expIter, new TypeError('Expected iterable, got infinity'));
+test._undefined(expIter, new TypeError('Expected iterable, got undefined'));
+test._null(expIter, new TypeError('Expected iterable, got null'));
+test._true(expIter, new TypeError('Expected iterable, got boolean'));
+test._false(expIter, new TypeError('Expected iterable, got boolean'));
+test._function(expIter, new TypeError('Expected iterable, got function'));
+test._number(expIter, new TypeError('Expected iterable, got number'));
+test._object(expIter, new TypeError('Expected iterable, got object'));
+test._string(expIter, 'itself');
+test._symbol(expIter, new TypeError('Expected iterable, got symbol'));
+test._integer(expIter, new TypeError('Expected iterable, got number'));
+test._array(expIter, 'itself');
+test._typedArray(expIter, 'itself');
+test._map(expIter, 'itself');
+test._set(expIter, 'itself');

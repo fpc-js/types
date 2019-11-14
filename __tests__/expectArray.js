@@ -1,0 +1,20 @@
+import { expectArray as expArr } from '../src';
+import * as test from '../test-utils';
+
+test._nan(expArr, new TypeError('Expected array, got NaN'));
+test._plusInfinity(expArr, new TypeError('Expected array, got infinity'));
+test._minusInfinity(expArr, new TypeError('Expected array, got infinity'));
+test._undefined(expArr, new TypeError('Expected array, got undefined'));
+test._null(expArr, new TypeError('Expected array, got null'));
+test._true(expArr, new TypeError('Expected array, got boolean'));
+test._false(expArr, new TypeError('Expected array, got boolean'));
+test._function(expArr, new TypeError('Expected array, got function'));
+test._number(expArr, new TypeError('Expected array, got number'));
+test._object(expArr, new TypeError('Expected array, got object'));
+test._string(expArr, new TypeError('Expected array, got string'));
+test._symbol(expArr, new TypeError('Expected array, got symbol'));
+test._integer(expArr, new TypeError('Expected array, got number'));
+test._array(expArr, 'itself');
+test._typedArray(expArr, new TypeError('Expected array, got object'));
+test._map(expArr, new TypeError('Expected array, got object'));
+test._set(expArr, new TypeError('Expected array, got object'));
