@@ -1,0 +1,20 @@
+import { typeOf } from '../src';
+import * as test from '../test-utils';
+
+test._nan(typeOf, 'NaN');
+test._plusInfinity(typeOf, 'infinity');
+test._minusInfinity(typeOf, 'infinity');
+test._undefined(typeOf, 'undefined');
+test._null(typeOf, 'null');
+test._true(typeOf, 'boolean');
+test._false(typeOf, 'boolean');
+test._function(typeOf, 'function');
+test._number(typeOf, 'number');
+test._object(typeOf, 'object');
+test._string(typeOf, 'string');
+test._symbol(typeOf, 'symbol');
+test._integer(typeOf, 'number');
+test._array(typeOf, 'object');
+test._typedArray(typeOf, 'object');
+test._map(typeOf, 'object');
+test._set(typeOf, 'object');

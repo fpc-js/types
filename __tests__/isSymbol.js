@@ -1,0 +1,20 @@
+import { isSymbol } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isSymbol, false);
+test._plusInfinity(isSymbol, false);
+test._minusInfinity(isSymbol, false);
+test._undefined(isSymbol, false);
+test._null(isSymbol, false);
+test._true(isSymbol, false);
+test._false(isSymbol, false);
+test._function(isSymbol, false);
+test._number(isSymbol, false);
+test._object(isSymbol, false);
+test._string(isSymbol, false);
+test._symbol(isSymbol, true);
+test._integer(isSymbol, false);
+test._array(isSymbol, false);
+test._typedArray(isSymbol, false);
+test._map(isSymbol, false);
+test._set(isSymbol, false);
