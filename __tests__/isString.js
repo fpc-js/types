@@ -1,0 +1,21 @@
+import { isString } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isString, false);
+test._plusInfinity(isString, false);
+test._minusInfinity(isString, false);
+test._undefined(isString, false);
+test._null(isString, false);
+test._true(isString, false);
+test._false(isString, false);
+test._function(isString, false);
+test._number(isString, false);
+test._object(isString, false);
+test._string(isString, true);
+test._symbol(isString, false);
+test._integer(isString, false);
+test._array(isString, false);
+test._typedArray(isString, false);
+test._map(isString, false);
+test._set(isString, false);
+test._promise(isString, false);

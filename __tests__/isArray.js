@@ -1,0 +1,21 @@
+import { isArray } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isArray, false);
+test._plusInfinity(isArray, false);
+test._minusInfinity(isArray, false);
+test._undefined(isArray, false);
+test._null(isArray, false);
+test._true(isArray, false);
+test._false(isArray, false);
+test._function(isArray, false);
+test._number(isArray, false);
+test._object(isArray, false);
+test._string(isArray, false);
+test._symbol(isArray, false);
+test._integer(isArray, false);
+test._array(isArray, true);
+test._typedArray(isArray, false);
+test._map(isArray, false);
+test._set(isArray, false);
+test._promise(isArray, false);
