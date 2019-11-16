@@ -1,0 +1,21 @@
+import { isInteger } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isInteger, false);
+test._plusInfinity(isInteger, false);
+test._minusInfinity(isInteger, false);
+test._undefined(isInteger, false);
+test._null(isInteger, false);
+test._true(isInteger, false);
+test._false(isInteger, false);
+test._function(isInteger, false);
+test._number(isInteger, false);
+test._object(isInteger, false);
+test._string(isInteger, false);
+test._symbol(isInteger, false);
+test._integer(isInteger, true);
+test._array(isInteger, false);
+test._typedArray(isInteger, false);
+test._map(isInteger, false);
+test._set(isInteger, false);
+test._promise(isInteger, false);

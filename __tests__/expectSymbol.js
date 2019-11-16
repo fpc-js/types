@@ -1,0 +1,21 @@
+import { expectSymbol as expSym } from '../src';
+import * as test from '../test-utils';
+
+test._nan(expSym, new Error('Expected symbol, got NaN'));
+test._plusInfinity(expSym, new Error('Expected symbol, got infinity'));
+test._minusInfinity(expSym, new Error('Expected symbol, got infinity'));
+test._undefined(expSym, new Error('Expected symbol, got undefined'));
+test._null(expSym, new Error('Expected symbol, got null'));
+test._true(expSym, new Error('Expected symbol, got boolean'));
+test._false(expSym, new Error('Expected symbol, got boolean'));
+test._function(expSym, new Error('Expected symbol, got function'));
+test._number(expSym, new Error('Expected symbol, got number'));
+test._object(expSym, new Error('Expected symbol, got object'));
+test._string(expSym, new Error('Expected symbol, got string'));
+test._symbol(expSym, 'itself');
+test._integer(expSym, new Error('Expected symbol, got number'));
+test._array(expSym, new Error('Expected symbol, got object'));
+test._typedArray(expSym, new Error('Expected symbol, got object'));
+test._map(expSym, new Error('Expected symbol, got object'));
+test._set(expSym, new Error('Expected symbol, got object'));
+test._promise(expSym, new Error('Expected symbol, got object'));

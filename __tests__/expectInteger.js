@@ -1,0 +1,21 @@
+import { expectInteger as expInt } from '../src';
+import * as test from '../test-utils';
+
+test._nan(expInt, new Error('Expected integer, got NaN'));
+test._plusInfinity(expInt, new Error('Expected integer, got infinity'));
+test._minusInfinity(expInt, new Error('Expected integer, got infinity'));
+test._undefined(expInt, new Error('Expected integer, got undefined'));
+test._null(expInt, new Error('Expected integer, got null'));
+test._true(expInt, new Error('Expected integer, got boolean'));
+test._false(expInt, new Error('Expected integer, got boolean'));
+test._function(expInt, new Error('Expected integer, got function'));
+test._number(expInt, new Error('Expected integer, got number'));
+test._object(expInt, new Error('Expected integer, got object'));
+test._string(expInt, new Error('Expected integer, got string'));
+test._symbol(expInt, new Error('Expected integer, got symbol'));
+test._integer(expInt, 'itself');
+test._array(expInt, new Error('Expected integer, got object'));
+test._typedArray(expInt, new Error('Expected integer, got object'));
+test._map(expInt, new Error('Expected integer, got object'));
+test._set(expInt, new Error('Expected integer, got object'));
+test._promise(expInt, new Error('Expected integer, got object'));

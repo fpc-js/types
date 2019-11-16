@@ -1,0 +1,21 @@
+import { expectBoolean as expBool } from '../src';
+import * as test from '../test-utils';
+
+test._nan(expBool, new Error('Expected boolean, got NaN'));
+test._plusInfinity(expBool, new Error('Expected boolean, got infinity'));
+test._minusInfinity(expBool, new Error('Expected boolean, got infinity'));
+test._undefined(expBool, new Error('Expected boolean, got undefined'));
+test._null(expBool, new Error('Expected boolean, got null'));
+test._true(expBool, true);
+test._false(expBool, false);
+test._function(expBool, new Error('Expected boolean, got function'));
+test._number(expBool, new Error('Expected boolean, got number'));
+test._object(expBool, new Error('Expected boolean, got object'));
+test._string(expBool, new Error('Expected boolean, got string'));
+test._symbol(expBool, new Error('Expected boolean, got symbol'));
+test._integer(expBool, new Error('Expected boolean, got number'));
+test._array(expBool, new Error('Expected boolean, got object'));
+test._typedArray(expBool, new Error('Expected boolean, got object'));
+test._map(expBool, new Error('Expected boolean, got object'));
+test._set(expBool, new Error('Expected boolean, got object'));
+test._promise(expBool, new Error('Expected boolean, got object'));

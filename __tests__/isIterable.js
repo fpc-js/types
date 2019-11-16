@@ -1,0 +1,21 @@
+import { isIterable } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isIterable, false);
+test._plusInfinity(isIterable, false);
+test._minusInfinity(isIterable, false);
+test._undefined(isIterable, false);
+test._null(isIterable, false);
+test._true(isIterable, false);
+test._false(isIterable, false);
+test._function(isIterable, false);
+test._number(isIterable, false);
+test._object(isIterable, false);
+test._string(isIterable, true);
+test._symbol(isIterable, false);
+test._integer(isIterable, false);
+test._array(isIterable, true);
+test._typedArray(isIterable, true);
+test._map(isIterable, true);
+test._set(isIterable, true);
+test._promise(isIterable, false);

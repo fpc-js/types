@@ -1,0 +1,21 @@
+import { isBoolean } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isBoolean, false);
+test._plusInfinity(isBoolean, false);
+test._minusInfinity(isBoolean, false);
+test._undefined(isBoolean, false);
+test._null(isBoolean, false);
+test._true(isBoolean, true);
+test._false(isBoolean, true);
+test._function(isBoolean, false);
+test._number(isBoolean, false);
+test._object(isBoolean, false);
+test._string(isBoolean, false);
+test._symbol(isBoolean, false);
+test._integer(isBoolean, false);
+test._array(isBoolean, false);
+test._typedArray(isBoolean, false);
+test._map(isBoolean, false);
+test._set(isBoolean, false);
+test._promise(isBoolean, false);
