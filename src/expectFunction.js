@@ -1,4 +1,4 @@
-import { expect } from './internal/expect';
+import { expect } from './internal';
 import { isFunction } from './isFunction';
 
 export const expectFunction = val =>

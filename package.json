@@ -1,7 +1,7 @@
 {
   "name": "@fpc/types",
   "description": "Dynamic type checking functions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Emiliano Bovetti <emiliano.bovetti@gmail.com>",
   "license": "GPL-3.0",
   "keywords": [
