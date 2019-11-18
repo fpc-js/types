@@ -1,7 +1,7 @@
 {
   "name": "@fpc/types",
   "description": "Dynamic type checking functions",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Emiliano Bovetti <emiliano.bovetti@gmail.com>",
   "license": "GPL-3.0",
   "keywords": [
@@ -10,6 +10,7 @@
     "fpc",
     "fp"
   ],
+  "type": "module",
   "main": "./src/index",
   "scripts": {
     "test": "jest",
