@@ -18,3 +18,4 @@ test._array(isSymbol, false);
 test._typedArray(isSymbol, false);
 test._map(isSymbol, false);
 test._set(isSymbol, false);
+test._promise(isSymbol, false);

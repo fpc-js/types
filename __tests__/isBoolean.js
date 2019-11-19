@@ -18,3 +18,4 @@ test._array(isBoolean, false);
 test._typedArray(isBoolean, false);
 test._map(isBoolean, false);
 test._set(isBoolean, false);
+test._promise(isBoolean, false);

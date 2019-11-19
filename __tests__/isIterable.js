@@ -18,3 +18,4 @@ test._array(isIterable, true);
 test._typedArray(isIterable, true);
 test._map(isIterable, true);
 test._set(isIterable, true);
+test._promise(isIterable, false);

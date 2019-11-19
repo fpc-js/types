@@ -19,3 +19,5 @@ export * from './isInteger';
 export * from './expectInteger';
 export * from './isIterable';
 export * from './expectIterable';
+export * from './isPromise';
+export * from './expectPromise';

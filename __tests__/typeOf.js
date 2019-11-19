@@ -18,3 +18,4 @@ test._array(typeOf, 'object');
 test._typedArray(typeOf, 'object');
 test._map(typeOf, 'object');
 test._set(typeOf, 'object');
+test._promise(typeOf, 'object');

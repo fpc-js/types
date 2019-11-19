@@ -18,3 +18,4 @@ test._array(isString, false);
 test._typedArray(isString, false);
 test._map(isString, false);
 test._set(isString, false);
+test._promise(isString, false);

@@ -18,3 +18,4 @@ test._array(isInteger, false);
 test._typedArray(isInteger, false);
 test._map(isInteger, false);
 test._set(isInteger, false);
+test._promise(isInteger, false);

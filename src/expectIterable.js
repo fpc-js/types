@@ -1,4 +1,4 @@
-import { expect } from './internal';
+import { expect } from './internals';
 import { isIterable } from './isIterable';
 
 export const expectIterable = val =>

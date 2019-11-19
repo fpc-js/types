@@ -18,3 +18,4 @@ test._array(isObject, true);
 test._typedArray(isObject, true);
 test._map(isObject, true);
 test._set(isObject, true);
+test._promise(isObject, true);

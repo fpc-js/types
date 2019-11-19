@@ -1,0 +1,21 @@
+import { isPromise } from '../src';
+import * as test from '../test-utils';
+
+test._nan(isPromise, false);
+test._plusInfinity(isPromise, false);
+test._minusInfinity(isPromise, false);
+test._undefined(isPromise, false);
+test._null(isPromise, false);
+test._true(isPromise, false);
+test._false(isPromise, false);
+test._function(isPromise, false);
+test._number(isPromise, false);
+test._object(isPromise, false);
+test._string(isPromise, false);
+test._symbol(isPromise, false);
+test._integer(isPromise, false);
+test._array(isPromise, false);
+test._typedArray(isPromise, false);
+test._map(isPromise, false);
+test._set(isPromise, false);
+test._promise(isPromise, true);

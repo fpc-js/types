@@ -1,4 +1,4 @@
-/* globals Symbol, Int8Array, Map, Set */
+/* globals Symbol, Int8Array, Map, Set, Promise */
 /* eslint-disable no-magic-numbers */
 
 const testValue = (val, strVal, fn, exp) => {
@@ -74,3 +74,8 @@ export const _map = (fn, exp) =>
 
 export const _set = (fn, exp) =>
   testValue(new Set([0]), '<Set>', fn, exp);
+
+/* Promise */
+
+export const _promise = (fn, exp) =>
+  testValue(Promise.resolve(0), '<Promise>', fn, exp);

@@ -18,3 +18,4 @@ test._array(isFunction, false);
 test._typedArray(isFunction, false);
 test._map(isFunction, false);
 test._set(isFunction, false);
+test._promise(isFunction, false);
