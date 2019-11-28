@@ -8,7 +8,7 @@ test._undefined(isObject, false);
 test._null(isObject, false);
 test._true(isObject, false);
 test._false(isObject, false);
-test._function(isObject, false);
+test._function(isObject, true);
 test._number(isObject, false);
 test._object(isObject, true);
 test._string(isObject, false);

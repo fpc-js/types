@@ -8,7 +8,7 @@ test._undefined(expObj, new Error('Expected object, got undefined'));
 test._null(expObj, new Error('Expected object, got null'));
 test._true(expObj, new Error('Expected object, got boolean'));
 test._false(expObj, new Error('Expected object, got boolean'));
-test._function(expObj, new Error('Expected object, got function'));
+test._function(expObj, 'itself');
 test._number(expObj, new Error('Expected object, got number'));
 test._object(expObj, 'itself');
 test._string(expObj, new Error('Expected object, got string'));
