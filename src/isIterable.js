@@ -3,4 +3,4 @@ import { isFunction } from './isFunction';
 /* global Symbol */
 
 export const isIterable = val =>
-  isFunction(val == null || val[Symbol.iterator]);
+  val != null && isFunction(val[Symbol.iterator]);

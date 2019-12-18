@@ -1,4 +1,4 @@
 import { isFunction } from './isFunction';
 
 export const isPromise = val =>
-  isFunction(val == null || val.then);
+  val != null && isFunction(val.then);
