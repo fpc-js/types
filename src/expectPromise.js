@@ -1,4 +1,5 @@
-import { expected, promiseType } from './internals';
+import { expected } from './internals/expected';
+import { promiseType } from './internals/typeLabels';
 import { isPromise } from './isPromise';
 
 export const expectPromise = val => (

@@ -1,4 +1,5 @@
-import { expected, functionType } from './internals';
+import { expected } from './internals/expected';
+import { functionType } from './internals/typeLabels';
 import { isFunction } from './isFunction';
 
 export const expectFunction = val => (

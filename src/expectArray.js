@@ -1,4 +1,5 @@
-import { expected, arrayType } from './internals';
+import { expected } from './internals/expected';
+import { arrayType } from './internals/typeLabels';
 import { isArray } from './isArray';
 
 export const expectArray = val => (

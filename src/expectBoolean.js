@@ -1,4 +1,5 @@
-import { expected, booleanType } from './internals';
+import { expected } from './internals/expected';
+import { booleanType } from './internals/typeLabels';
 import { isBoolean } from './isBoolean';
 
 export const expectBoolean = val => (

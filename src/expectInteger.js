@@ -1,4 +1,5 @@
-import { expected, integerType } from './internals';
+import { expected } from './internals/expected';
+import { integerType } from './internals/typeLabels';
 import { isInteger } from './isInteger';
 
 export const expectInteger = val => (

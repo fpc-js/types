@@ -1,4 +1,5 @@
-import { expected, symbolType } from './internals';
+import { expected } from './internals/expected';
+import { symbolType } from './internals/typeLabels';
 import { isSymbol } from './isSymbol';
 
 export const expectSymbol = val => (

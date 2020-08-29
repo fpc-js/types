@@ -1,4 +1,4 @@
-import { objectType, functionType } from './internals';
+import { objectType, functionType } from './internals/typeLabels';
 
 /* eslint-disable no-mixed-operators */
 

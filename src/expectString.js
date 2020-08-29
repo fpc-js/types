@@ -1,4 +1,5 @@
-import { expected, stringType } from './internals';
+import { expected } from './internals/expected';
+import { stringType } from './internals/typeLabels';
 import { isString } from './isString';
 
 export const expectString = val => (
