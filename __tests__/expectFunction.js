@@ -1,5 +1,5 @@
-import { expectFunction as expFn } from '../src';
-import * as test from '../test-utils';
+import { expectFunction as expFn } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expFn, new Error('Expected function, got NaN'));
 test._plusInfinity(expFn, new Error('Expected function, got infinity'));

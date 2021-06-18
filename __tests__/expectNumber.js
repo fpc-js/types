@@ -1,5 +1,5 @@
-import { expectNumber as expNum } from '../src';
-import * as test from '../test-utils';
+import { expectNumber as expNum } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expNum, new Error('Expected number, got NaN'));
 test._plusInfinity(expNum, new Error('Expected number, got infinity'));

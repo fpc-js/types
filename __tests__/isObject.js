@@ -1,5 +1,5 @@
-import { isObject } from '../src';
-import * as test from '../test-utils';
+import { isObject } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isObject, false);
 test._plusInfinity(isObject, false);

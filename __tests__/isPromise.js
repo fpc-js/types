@@ -1,5 +1,5 @@
-import { isPromise } from '../src';
-import * as test from '../test-utils';
+import { isPromise } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isPromise, false);
 test._plusInfinity(isPromise, false);

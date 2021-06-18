@@ -1,5 +1,5 @@
-import { expectPromise as expProm } from '../src';
-import * as test from '../test-utils';
+import { expectPromise as expProm } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expProm, new Error('Expected promise, got NaN'));
 test._plusInfinity(expProm, new Error('Expected promise, got infinity'));

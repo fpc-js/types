@@ -1,6 +1,6 @@
-import { expected } from './internals/expected';
-import { promiseType } from './internals/typeLabels';
-import { isPromise } from './isPromise';
+import { expected } from './internals/expected.js';
+import { promiseType } from './internals/typeLabels.js';
+import { isPromise } from './isPromise.js';
 
 export const expectPromise = val => (
   isPromise(val) ? val : expected(promiseType, val)

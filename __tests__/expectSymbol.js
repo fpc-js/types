@@ -1,5 +1,5 @@
-import { expectSymbol as expSym } from '../src';
-import * as test from '../test-utils';
+import { expectSymbol as expSym } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expSym, new Error('Expected symbol, got NaN'));
 test._plusInfinity(expSym, new Error('Expected symbol, got infinity'));

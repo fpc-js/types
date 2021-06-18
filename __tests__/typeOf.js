@@ -1,5 +1,5 @@
-import { typeOf } from '../src';
-import * as test from '../test-utils';
+import { typeOf } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(typeOf, 'NaN');
 test._plusInfinity(typeOf, 'infinity');

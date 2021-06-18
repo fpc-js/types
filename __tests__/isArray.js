@@ -1,5 +1,5 @@
-import { isArray } from '../src';
-import * as test from '../test-utils';
+import { isArray } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isArray, false);
 test._plusInfinity(isArray, false);
