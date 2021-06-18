@@ -1,4 +1,4 @@
-import { numberType } from './internals/typeLabels';
+import { numberType } from './internals/typeLabels.js';
 
 export const typeOf = val => (
   /* eslint-disable indent, multiline-ternary, no-negated-condition */

@@ -1,5 +1,5 @@
-import { expectIterable as expIter } from '../src';
-import * as test from '../test-utils';
+import { expectIterable as expIter } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expIter, new Error('Expected iterable, got NaN'));
 test._plusInfinity(expIter, new Error('Expected iterable, got infinity'));

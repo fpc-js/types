@@ -1,5 +1,5 @@
-import { expectArray as expArr } from '../src';
-import * as test from '../test-utils';
+import { expectArray as expArr } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expArr, new Error('Expected array, got NaN'));
 test._plusInfinity(expArr, new Error('Expected array, got infinity'));

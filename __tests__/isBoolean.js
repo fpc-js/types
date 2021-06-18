@@ -1,5 +1,5 @@
-import { isBoolean } from '../src';
-import * as test from '../test-utils';
+import { isBoolean } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isBoolean, false);
 test._plusInfinity(isBoolean, false);

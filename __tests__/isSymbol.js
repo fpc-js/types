@@ -1,5 +1,5 @@
-import { isSymbol } from '../src';
-import * as test from '../test-utils';
+import { isSymbol } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isSymbol, false);
 test._plusInfinity(isSymbol, false);

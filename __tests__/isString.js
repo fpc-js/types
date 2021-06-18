@@ -1,5 +1,5 @@
-import { isString } from '../src';
-import * as test from '../test-utils';
+import { isString } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isString, false);
 test._plusInfinity(isString, false);

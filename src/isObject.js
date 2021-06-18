@@ -1,4 +1,4 @@
-import { objectType, functionType } from './internals/typeLabels';
+import { objectType, functionType } from './internals/typeLabels.js';
 
 /* eslint-disable no-mixed-operators */
 

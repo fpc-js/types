@@ -1,4 +1,4 @@
-import { functionType } from './internals/typeLabels';
+import { functionType } from './internals/typeLabels.js';
 
 /* global Symbol */
 

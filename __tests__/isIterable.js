@@ -1,5 +1,5 @@
-import { isIterable } from '../src';
-import * as test from '../test-utils';
+import { isIterable } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isIterable, false);
 test._plusInfinity(isIterable, false);

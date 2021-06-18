@@ -1,5 +1,5 @@
-import { expectBoolean as expBool } from '../src';
-import * as test from '../test-utils';
+import { expectBoolean as expBool } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(expBool, new Error('Expected boolean, got NaN'));
 test._plusInfinity(expBool, new Error('Expected boolean, got infinity'));

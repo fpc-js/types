@@ -1,5 +1,5 @@
-import { isNumber } from '../src';
-import * as test from '../test-utils';
+import { isNumber } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isNumber, false);
 test._plusInfinity(isNumber, false);

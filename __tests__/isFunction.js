@@ -1,5 +1,5 @@
-import { isFunction } from '../src';
-import * as test from '../test-utils';
+import { isFunction } from '../src/index.js';
+import * as test from '../test-utils.js';
 
 test._nan(isFunction, false);
 test._plusInfinity(isFunction, false);
